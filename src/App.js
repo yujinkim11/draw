@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { Canvas } from "./component/Canvas";
 import { List } from "./component/List";
@@ -6,7 +7,7 @@ import { List } from "./component/List";
 function App() {
   return (
     <>
-      <Container>
+      <Container className="container">
         <Row>
           <Col>
             <Canvas />

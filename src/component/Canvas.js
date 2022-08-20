@@ -1,3 +1,16 @@
+import { useRef } from "react";
+
 export const Canvas = () => {
-  return <div>그리는 곳</div>;
+  const canvas = useRef(null);
+
+  return (
+    <div>
+      <canvas
+        ref={canvas}
+        width={800}
+        height={800}
+        className="canvasWrap"
+      ></canvas>
+    </div>
+  );
 };
