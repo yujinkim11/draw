@@ -1,16 +1,11 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Canvas = () => {
-  const canvas = useRef(null);
+  const canvasRef = useRef(null);
 
   return (
-    <div>
-      <canvas
-        ref={canvas}
-        width={800}
-        height={800}
-        className="canvasWrap"
-      ></canvas>
+    <div className="canvasWrap">
+      <canvas ref={canvasRef} width={800} height={800}></canvas>
     </div>
   );
 };
