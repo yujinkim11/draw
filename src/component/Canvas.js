@@ -11,8 +11,11 @@ export const Canvas = () => {
     canvas.height = 800;
     ctx.lineWidth = 2;
     ctx.strokeStyle = "#000000";
+
+    ctx.rect(115, 115, 100, 100);
+    ctx.stroke();
+
     setGetCtx(ctx);
-    ctx.fillRect(50, 50, 100, 100);
   }, []);
 
   return (
